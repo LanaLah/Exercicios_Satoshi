@@ -1,0 +1,17 @@
+Algoritmo "Ex7"
+//7.	Receba os valores do comprimento, largura e altura de um paralelepípedo.
+// Calcule e mostre seu volume.
+Var
+   comprimento, largura, altura, volume:real
+Inicio
+      escreva("Comprimento: ")
+      leia(comprimento)
+      escreva("Largura: ")
+      leia(largura)
+      escreva("Altura: ")
+      leia(altura)
+      
+      volume <- comprimento*largura*altura
+      
+      escreva("O volume do paralelepípedo é: ", volume)
+Fimalgoritmo
