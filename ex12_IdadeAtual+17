@@ -1,0 +1,15 @@
+Algoritmo "Linear_ex12"
+//12.	Receba o ano de nascimento e o ano atual.
+//Calcule e mostre a sua idade e quantos anos terá daqui a 17 anos.
+Var
+   anoN, anoA, idade, valor17:inteiro
+Inicio
+      escreva("Digite o ano de nascimento: ")
+      leia(anoN)
+      escreva("Digite o ano atual: ")
+      leia(anoA)
+
+      idade <- anoA - anoN
+      valor17 <- idade + 17
+      escreva("Você tem: ", idade, " anos. E daqui a 17 anos terá: ", valor17)
+Fimalgoritmo
