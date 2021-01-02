@@ -1,0 +1,16 @@
+Algoritmo "Linear_ex6"
+//6.	Receba os valores em x e y. Efetua a troca de seus valores e
+//mostre seus conteúdos.
+Var
+   x, y, xx, yy: real
+Inicio
+      escreva("Valor de X: ")
+      leia(x)
+      escreva("Valor de y: ")
+      leia(y)
+      
+      xx <- y
+      yy <- x
+      
+      escreva("O valor de X é: ", xx, " e o valor de Y é: ", yy)
+Fimalgoritmo
