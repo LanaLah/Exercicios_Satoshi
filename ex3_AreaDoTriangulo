@@ -1,0 +1,14 @@
+Algoritmo "Linear_ex3"
+//Receba a base e a altura de um triângulo. Calcule e mostre a sua área.
+Var
+   base, altura, area: real
+Inicio
+     escreva("Digite a base: ")
+     leia(base)
+     escreva("Digite a altura: ")
+     leia(altura)
+     
+     area <- (base*altura)/2
+     
+     escreva("A área do triângulo é: ", area)
+Fimalgoritmo
