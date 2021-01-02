@@ -1,0 +1,14 @@
+Algoritmo "Linear_ex10"
+//10.	Receba 2 números reais. Calcule e mostre a diferença desses valores
+Var
+   valor1, valor2, diferenca:real
+Inicio
+      escreva("Digite um valor: ")
+      leia(valor1)
+      escreva("Digite outro valor: ")
+      leia(valor2)
+      
+      diferenca <- valor1 - valor2
+      
+      escreva("A diferença é de: ", diferenca)
+Fimalgoritmo
