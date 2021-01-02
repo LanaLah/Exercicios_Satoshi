@@ -1,0 +1,54 @@
+Algoritmo "ex20"
+// 20.	Receba 3 coeficientes A, B, e C de uma equação do 2º grau da fórmula
+//AX²+BX+C=0.
+//Verifique e mostre a existência de raízes reais e se caso exista,
+//calcule e mostre.
+Var
+   a,b,c:inteiro
+   delta, raizdelta, X1, X2:real
+
+Procedimento Calcdelta()
+Inicio
+   //delta = b^2 - 4.a.c
+   delta <- b^2 - 4*a*c
+
+   Se delta > 0 entao
+      escreval("Existem 2 raízes reais")
+      baskara1()
+   senao
+        se delta = 0 entao
+           escreval("Existe 1 raiz real")
+           baskara1()
+        senao
+             escreval("Não há raizes")
+   fimse
+   fimse
+Fimprocedimento
+
+Procedimento baskara1()
+Inicio
+  //baskara
+   // X = -b+-raiz(delta)/2.a
+   raizdelta <- raizQ(delta)
+   X1 <- (-(b)+ raizdelta)/2
+   X2 <- (-(b)- raizdelta)/2
+
+   Se X1 <> X2 entao
+   escreval("Raizes: ",X1, " e ", X2)
+   senao
+   escreval("Raiz: ", X1)
+   fimse
+Fimprocedimento
+
+Inicio
+   escreva("Valor de A: ")
+   leia(a)
+   limpatela()
+   escreva("Valor de B: ")
+   leia(b)
+   limpatela()
+   escreva("Valor de C: ")
+   leia(c)
+   limpatela()
+   Calcdelta()
+Fimalgoritmo
