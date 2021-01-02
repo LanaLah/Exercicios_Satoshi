@@ -1,0 +1,24 @@
+Algoritmo "ex18"
+// 18.	Receba 2 valores inteiros. Calcule e mostre o resultado da
+//diferença do maior pelo menos valor.
+Var
+   N1, N2, diferenca:inteiro
+
+Procedimento calc()
+Inicio
+   se N1 > N2 entao
+      diferenca <- N1 - N2
+   senao
+      diferenca <- N2 - N1
+   fimse
+Fimprocedimento
+Inicio
+   Escreva("Digite um número: ")
+   leia(N1)
+   Escreva("Digite um número: ")
+   leia(N2)
+   calc()
+
+   Escreva("A diferença é de: ", diferenca)
+
+Fimalgoritmo
