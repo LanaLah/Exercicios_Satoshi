@@ -1,0 +1,22 @@
+Algoritmo "ex19"
+// 19.	Receba 2 valores reais. Calcule e mostre o maior deles.
+Var
+   R1, R2, Maior:real
+Procedimento calcM()
+Inicio
+      se R1 > R2 entao
+      Maior <- R1
+      senao
+      Maior <- R2
+      fimse
+Fimprocedimento
+Inicio
+      Escreva("Digite um valor real: ")
+      leia(R1)
+      Escreva("Digite outro valor real: ")
+      leia(R2)
+      calcM()
+      
+      Escreva(Maior, " é o maior valor.")
+
+Fimalgoritmo
