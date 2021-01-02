@@ -1,0 +1,19 @@
+Algoritmo "Ex9"
+//9.	Receba os 2 números inteiros. Calcule e mostre a soma dos quadrados.
+Var
+   N1, N2, N1Q, N2Q, soma:real
+Inicio
+      escreva("Digite um numero: ")
+      leia(N1)
+      escreva("Digite um numero: ")
+      leia(N2)
+      
+      N1Q <- N1^2
+
+      N2Q <- N2^2
+      
+      soma <- N1Q+N2Q
+      
+      escreva("O quadrado de ",N1, " é: ", N1Q, " e o quadrado de ",N2, " é: ", N2Q, ". A soma de : ",N1Q,"+",N2Q, " = ", soma)
+
+Fimalgoritmo
