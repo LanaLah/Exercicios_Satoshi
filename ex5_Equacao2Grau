@@ -1,0 +1,31 @@
+Algoritmo "Ex5"
+//5.	Receba os coeficientes A, B e C de uma equação do 2º grau (AX²+BX+C=0).
+//Calcule e mostre as raízes reais (considerar que a equação possui 2 raízes).
+Var
+   a,b,c:inteiro
+   delta, raizdelta, X1, X2:real
+
+Inicio
+   escreva("Valor de A: ")
+   leia(a)
+   limpatela()
+   escreva("Valor de B: ")
+   leia(b)
+   limpatela()
+   escreva("Valor de C: ")
+   leia(c)
+   limpatela()
+   
+   escreval("Valor de A: ",a, ". Valor de B: ",b, ". Valor de C: ",c)
+   escreval("------------------------------------------------------")
+   
+   //delta = b^2 - 4.a.c
+   delta <- b^2 - 4*a*c
+   //baskara
+   // X = -b+-raiz(delta)/2.a
+   raizdelta <- raizQ(delta)
+   X1 <- (-(b)+ raizdelta)/2
+   X2 <- (-(b)- raizdelta)/2
+
+   escreva("X1: ", X1, " e X2: ", X2)
+Fimalgoritmo
