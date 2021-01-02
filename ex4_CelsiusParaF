@@ -1,0 +1,14 @@
+Algoritmo "Ex4"
+//4.	Receba a temperatura em graus Celsius.
+//Calcule e mostre a sua temperatura convertida em fahrenheit
+//F = (9*C+160) /5.
+Var
+   C, F:real
+Inicio
+   Escreva("Digite a temperatura em Celsius: ")
+   leia(C)
+
+   F <- (9*C+160)/5
+
+   Escreva("Temperatura ",C, "C em Fahrenheit: ", F)
+Fimalgoritmo
