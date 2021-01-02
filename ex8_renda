@@ -1,0 +1,13 @@
+Algoritmo "Ex8"
+//8.	Receba o valor de um depósito em poupança.
+//Calcule e mostre o valor após 1 mês de aplicação sabendo que rende 1,3% a. m.
+Var
+      deposito, renda:real
+Inicio
+      escreva("Valor: ")
+      leia(deposito)
+      renda <- deposito * 1.3
+      
+      escreva("Valor após 1 mês: ", renda)
+
+Fimalgoritmo
