@@ -1,0 +1,20 @@
+Algoritmo "Ex14"
+//14.	Receba 2 ângulos de um triângulo. Calcule e mostre o valor do 3º ângulo.
+Var
+   angulo1, angulo2, soma, angulo3:real
+Inicio
+   escreva("Primeiro ângulo: ")
+   leia(angulo1)
+   escreva("Segundo ângulo: ")
+   leia(angulo2)
+
+   soma <- angulo1 + angulo2
+
+   se soma > 180 entao
+      angulo3 <- soma - 180
+   senao
+      angulo3 <- 180 - soma
+   fimse
+
+   escreva("O valor do 3 angulo é: ", angulo3)
+Fimalgoritmo
