@@ -1,0 +1,13 @@
+Algoritmo "Ex11"
+//11.	Receba o raio de uma circunferência.
+//Calcule e mostre o comprimento da circunferência.
+Var
+   R, C:real
+Inicio
+   escreva("Digite o valor do raio: ")
+   leia(R)
+   
+   C <- 2*3.14*R
+   
+   escreva("O comprimento da circunferência é: ", C)
+Fimalgoritmo
