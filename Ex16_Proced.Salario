@@ -1,0 +1,34 @@
+Algoritmo "Ex16"
+//16.	Receba a quantidade de horas trabalhadas, o valor por hora,
+//o percentual de desconto e o número de descendentes.
+//Calcule o salário que serão as horas trabalhadas x o valor por hora.
+//Calcule o salário líquido (= Salário Bruto - desconto).
+//A cada dependente será acrescido R$ 100 no Salário Líquido.
+//Exiba o salário a receber.
+Var
+   HTrabalho, ValorHora:inteiro
+   Percentual, descendentes, salarioB, salarioL, salario, desconto, acrescimo : real
+   
+Procedimento CalcSalario()
+Inicio
+      acrescimo <- descendentes*100
+      salarioB <- HTrabalho*ValorHora
+      desconto <- salarioB*Percentual/100
+      salarioL <- salarioB-desconto
+      salario <- acrescimo + salarioL
+
+fimprocedimento
+Inicio
+      escreva("Horas trabalhadas: ")
+      leia(HTrabalho)
+      escreva("Valor por hora: ")
+      leia(ValorHora)
+      escreva("Percentual de desconto: ")
+      leia(Percentual)
+      escreva("Número de descendentes: ")
+      leia(descendentes)
+
+      CalcSalario()
+
+      escreva("Salário a receber: ", salario)
+Fimalgoritmo
