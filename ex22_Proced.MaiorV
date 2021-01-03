@@ -1,0 +1,35 @@
+Algoritmo "Ex22"
+//22.	Receba 2 valores inteiros e diferentes.
+//Mostre seus valores em ordem crescente
+
+var
+   n1, n2, A, B:inteiro
+   resposta:caractere
+Procedimento Ordem()
+Inicio
+      se n1 = n2 entao
+      resposta <- "Valores iguais"
+               A <- n1
+               B <- n2
+      senao
+           se n1 > n2 entao
+                A <- n2
+                B <- n1
+           senao
+           se n2 > n1 entao
+                A <- n1
+                B <- n2
+           fimse
+           fimse
+      fimse
+Fimprocedimento
+inicio
+      escreva("Digite um número: ")
+      leia(n1)
+      escreva("Digite outro número: ")
+      leia(n2)
+      Ordem()
+
+      escreva(resposta)
+      escreva(A, ", ", B)
+Fimalgoritmo
