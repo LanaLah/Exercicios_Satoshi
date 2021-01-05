@@ -1,0 +1,31 @@
+Algoritmo "semnome"
+//26.	Receba 2 números inteiros. Verifique e mostre se o maior número
+//é múltiplo do menor.
+var
+n1, n2:inteiro
+
+Procedimento validacao()
+inicio
+       se n1 > n2 entao
+         se n1 % n2 = 0 entao
+         escreva("É multiplo.")
+         senao
+         escreva("Não é multiplo.")
+         fimse
+      senao
+      se n2 > n1 entao
+         se n2 % n1 = 0 entao
+         escreva("É multiplo.")
+         senao
+         escreva("Não é multiplo.")
+         fimse
+      fimse
+      fimse
+fimprocedimento
+inicio
+      escreva("Digite um valor: ")
+      leia(n1)
+      escreva("Digite um valor: ")
+      leia(n2)
+      validacao()
+fimalgoritmo
