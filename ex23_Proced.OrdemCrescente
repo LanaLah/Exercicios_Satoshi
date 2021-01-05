@@ -1,0 +1,48 @@
+// 23.	Receba 3 valores obrigatoriamente em ordem crescente e um
+//4º valor não necessariamente em ordem.
+//Mostre os 4 números em ordem crescente.
+Var
+n1, n2, n3, n4:inteiro
+
+Procedimento validacao()
+inicio
+      se (n1 > n2) entao
+        escreva(n1, " é maior que ", n2, ". Portanto é inválido.")
+      senao
+        escreval("Digite um valor: ")
+        leia(n3)
+         se (n2 > n3) entao
+            escreva(n2, " é maior que ", n3, ". Portanto é inválido.")
+         senao
+            escreval("Digite um valor: ")
+            leia(n4)
+         fimse
+      fimse
+      ordem()
+fimprocedimento
+
+Procedimento ordem()
+inicio
+      se (n4 < n1) entao
+         escreva(n4,", ", n1,", ", n2,", ", n3)
+      senao
+           se (n4 > n1) e (n4 < n2) entao
+              escreva(n1,", ", n4,", ", n2,", ", n3)
+           senao
+                se (n4 > n2) e (n4 < n3) entao
+                   escreva(n1,", ", n2,", ", n4,", ", n3)
+                senao
+                     escreva(n1,", ", n2,", ", n3,", ", n4)
+                fimse
+           fimse
+      fimse
+fimprocedimento
+Inicio
+      escreval("Digite um valor: ")
+      leia(n1)
+      escreval("Digite um valor: ")
+      leia(n2)
+      validacao()
+Fimalgoritmo
+
+
