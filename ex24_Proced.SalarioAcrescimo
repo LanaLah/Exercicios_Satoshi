@@ -1,0 +1,39 @@
+Algoritmo "Salario28"
+//28.	Receba o preço atual e a média mensal de um produto.
+//Calcule e mostre o novo preço sabendo que:
+//Venda Mensal	   |Preço Atual	|Preço Novo
+//< 500	         | < 30	      | + 10%
+//>= 500 e < 1000	|>= 30 e < 80	|+15%
+//>= 1000	      |>= 80	      |- 5%
+//Obs.: para outras condições, preço novo será igual ao preço atual.
+
+Var
+PrecoA, MediaM, Acrescimo, PrecoN:real
+
+Procedimento Calc()
+inicio
+      se (PrecoA < 30) e (MediaM < 500) entao
+         Acrescimo <- PrecoA * 0.10
+         PrecoN <- PrecoA + Acrescimo
+      senao
+           se (PrecoA >= 30) e ( PrecoA < 80) e (MediaM >= 500) e (MediaM < 1000) entao
+              Acrescimo <- PrecoA * 0.15
+              PrecoN <- PrecoA + Acrescimo
+           senao
+                se (PrecoA >= 80) e (MediaM >= 1000) entao
+                   acrescimo <- PrecoA * 0.5
+                   PrecoN <- PrecoA - acrescimo
+                senao
+                   PrecoN <- PrecoA
+                fimse
+           fimse
+      fimse
+fimprocedimento
+Inicio
+      escreva("Preço atual: ")
+      leia(PrecoA)
+      escreva("Média mensal: ")
+      leia(MediaM)
+      Calc()
+      escreva("Preço atual: ", PrecoN)
+FimAlgoritmo
