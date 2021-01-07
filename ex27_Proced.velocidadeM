@@ -1,0 +1,25 @@
+Algoritmo "27"
+//27.	Receba o número de voltas, a extensão do circuito (em metros) e o
+//tempo de duração (minutos). Calcule e mostre a velocidade média em km/h.
+Var
+Nvoltas, metro, T, VCirc:inteiro
+H, KM, VelM:real
+
+Procedimento Vm()
+Inicio
+      VCirc <- Nvoltas * metro
+      H <- T/60
+      KM <- VCirc*1000
+      VelM <- KM/H
+
+fimprocedimento
+Inicio
+      escreva("Número de voltas: ")
+      leia(Nvoltas)
+      escreva("Extensão do circuito(metros): ")
+      leia(metro)
+      escreva("Tempo de duração(minutos): ")
+      leia(T)
+      Vm()
+      escreva("Velocidade média: ", VelM)
+Fimalgoritmo
