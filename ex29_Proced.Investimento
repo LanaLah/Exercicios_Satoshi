@@ -1,0 +1,36 @@
+Algoritmo "Investimento29"
+//29.	Receba o tipo de investimento (1 = poupança e 2 = renda fixa)
+//e o valor do investimento. Calcule e mostre o valor corrigido em 30 dias
+//sabendo que a poupança = 3% e a renda fixa = 5%.
+//Demais tipos não serão considerados.
+Var
+resposta:inteiro
+valor, ValorF, acrescimo: real
+
+Procedimento Investimento()
+inicio
+      Escolha resposta
+      Caso 1
+           escreval("Poupança")
+           escreva("Digite o valor do investimento: ")
+           leia(valor)
+           acrescimo <- valor * 0.3
+           ValorF <- acrescimo + valor
+           escreva("Valor corrigido: ", ValorF)
+      Caso 2
+           escreval("Renda Fixa")
+           escreva("Digite o valor do investimento: ")
+           leia(valor)
+           acrescimo <- valor * 0.5
+           ValorF <- acrescimo + valor
+           escreva("Valor corrigido: ", ValorF)
+      Outrocaso
+      escreva("Inválido")
+      fimescolha
+fimprocedimento
+
+inicio
+        escreva("Investimento: ")
+        leia(resposta)
+        Investimento()
+FimAlgoritmo
