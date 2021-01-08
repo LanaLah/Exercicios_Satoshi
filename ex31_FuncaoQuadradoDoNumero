@@ -1,0 +1,18 @@
+Algoritmo "Funções"
+//31.	Calcule e mostre o quadrado dos números entre 10 e 150.
+var
+cont, quadrado:inteiro
+
+funcao quadr(A:inteiro):inteiro
+Inicio
+      retorne cont*cont
+fimfuncao
+
+inicio
+cont <- 10
+      repita
+      quadrado <- quadr(cont)
+      escreval(cont, "=", quadrado)
+      cont <- cont + 1
+      ate(cont > 150)
+fimalgoritmo
