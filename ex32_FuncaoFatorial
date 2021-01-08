@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+// Algoritmo "Funcoes"
+//32. Receba um número inteiro. Calcule e mostre o seu fatorial.
+var
+n, res, c, fatorial: inteiro
+
+Funcao fat(x:inteiro):inteiro
+inicio
+c <- 1
+res <- 1
+    repita
+        res <- c*res
+        retorne res
+        c <- c + 1
+    ate(c > x)
+fimfuncao
+
+Inicio
+	escreva("Digite um número: ")
+	leia(n)
+	fatorial <- fat(n)
+   escreva("Fatorial de ", n, "=", fatorial)
+fimalgoritmo
