@@ -1,0 +1,21 @@
+Algoritmo "funçao"
+//34.	Receba um número. Calcule e mostre os resultados da tabuada desse número.
+Var
+n, cont, res:inteiro
+
+funcao tab(n, cont:inteiro):inteiro
+inicio
+    res <- n*cont
+    retorne res
+fimfuncao
+
+Inicio
+cont <- 0
+      escreva("Digite um número: ")
+      leia(n)
+      enquanto cont < 11 faca
+               res <- tab(n, cont)
+               escreval(n,"x", cont, "=", res)
+               cont <- cont + 1
+      fimenquanto
+Fimalgoritmo
