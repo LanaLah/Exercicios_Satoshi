@@ -1,0 +1,29 @@
+Algoritmo "funçao"
+// 33.	Receba um número. Calcule e mostre a série 1 + 1/2 + 1/3 + ... + 1/N.
+Var
+n, cont, one:inteiro
+res, soma, divisao:real
+
+Funcao fat(x:inteiro):real
+inicio
+cont <- 1
+      repita
+            divisao <- 1/cont
+            soma <- soma + divisao
+            cont <- cont + 1
+            retorne soma
+      ate(cont > x)
+fimfuncao
+
+Inicio
+cont <- 1
+one <- 1
+      escreva("Digite um número: ")
+      leia(n)
+      Repita
+            escreval(one, "/", cont, "+")
+            cont <- cont + 1
+      ate(cont > n)
+      res <- fat(n)
+      escreval("Resultado: ", res)
+Fimalgoritmo
