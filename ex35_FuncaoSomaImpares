@@ -1,0 +1,47 @@
+Algoritmo "funcao"
+//35.	Receba 2 números inteiros, verifique qual o maior entre eles.
+//Calcule e mostre o resultado da somatória dos números ímpares entre
+//esses valores.
+Var
+n1, n2, valor, maior, menor, cont, imp, im:inteiro
+
+Funcao verificacao(a,b:INTEIRO):INTEIRO
+inicio
+      se a > b entao
+         maior <- a
+         menor <- b
+         imp <- impar(maior,menor)
+      senao
+           se b > a entao
+              maior <- b
+              menor <- a
+              imp <- impar(maior,menor)
+           fimse
+      fimse
+fimfuncao
+
+Funcao impar(x,y:inteiro):inteiro
+inicio
+//cont <- 1
+      enquanto y < x faca
+               se y % 2 = 0 entao
+                  y <- y+1
+               senao
+                    se y % 2 = 1 entao
+                       im <- y + im
+                       y <- y+1
+                       retorne im
+                    fimse
+               fimse
+      fimenquanto
+fimfuncao
+
+Inicio
+      escreva("Digite um número: ")
+      leia(n1)
+      escreva("Digite um número: ")
+      leia(n2)
+      valor <- verificacao(n1,n2)
+      escreva(im)
+
+Fimalgoritmo
