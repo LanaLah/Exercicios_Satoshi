@@ -1,0 +1,33 @@
+Algoritmo "VETORES"
+// 46.	Criar e coletar um vetor [50] inteiro. Calcular e exibir:
+//a.	A média dos valores entre 10 e 200;
+//b.	A soma dos números ímpares.
+
+Var
+n:vetor[1..50] de inteiro
+i, med, SomaM, impares:inteiro
+media:real
+Inicio
+      Para i de 1 ate 50 faca
+      escreva("Digite um número:")
+      leia(n[i])
+      fimpara
+      
+      Para i de 1 ate 50 faca
+           se (n[i] >= 10) e (n[i] <= 200) entao
+              med <- med + 1
+              SomaM <- n[i] + SomaM
+           fimse
+      fimpara
+      
+      Para i de 1 ate 50 faca
+           se n[i] % 2 = 1 entao
+              impares <- impares + n[i]
+           fimse
+      fimpara
+
+      media <- SomaM/med
+      escreva("Média: ", media)
+      escreva("Soma dos impares: ", impares)
+Fimalgoritmo
+
