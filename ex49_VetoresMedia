@@ -1,0 +1,33 @@
+Algoritmo "VETORES"
+// 49.	Criar e coletar em um vetor [30] real e calcular e exibir:
+//a.	A média do grupo;
+//b.	A quantidade de notas acima do grupo;
+//c.	As posições dos valores abaixo da média do grupo.
+
+Var
+n:vetor[1..30] de real
+media,nota:real
+i, acima:inteiro
+Inicio
+      Para i de 1 ate 30 faca
+      escreval("Digite a nota:")
+      leia(n[i])
+      nota <- nota + n[i]
+      fimpara
+
+      media <- nota/30
+      escreval("Média: ", media)
+
+      Para i de 1 ate 30 faca
+       se n[i] > media entao
+          acima <- acima + 1
+       senao
+            se n[i] < media entao
+            escreval("Abaixo: ", i)
+            fimse
+       fimse
+      fimpara
+      escreval ("Notas acima: ", acima)
+Fimalgoritmo
+
+
